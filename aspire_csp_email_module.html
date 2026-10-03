@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Aspire · Singapore company setup email module</title>
+  <style>
+    body{margin:0;padding:24px 12px;background:#f5f4fa;font-family:Arial,Helvetica,sans-serif;color:#191735;-webkit-text-size-adjust:100%}
+    .preview{max-width:680px;margin:0 auto 12px;color:#66627d;font:12px/1.5 Arial,Helvetica,sans-serif}
+    .email{width:100%;max-width:600px;margin:0 auto;background:#fff;border:1px solid #e5e2f0;border-radius:18px;overflow:hidden}
+    .brand{padding:22px 28px;background:#211c49;color:#fff;font-size:20px;font-weight:700;letter-spacing:-1px}
+    .brand span{display:inline-block;margin-right:8px;padding:5px 9px;background:#6957e8;border-radius:9px;color:#fff}
+    .body{padding:30px 32px 20px;font-size:16px;line-height:1.65;color:#302e49}
+    .body p{margin:0 0 17px}.body strong{color:#191735}
+    .eyebrow{margin:0 0 10px!important;color:#5745d4;font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
+    .cta-wrap{padding:2px 0 20px}
+    .cta{display:inline-block;padding:14px 20px;border-radius:10px;background:#5f4bdf;color:#fff!important;text-decoration:none;font-size:15px;font-weight:700}
+    .foot{padding:18px 32px 24px;border-top:1px solid #eceaf3;color:#6e6a83;font-size:12px;line-height:1.55}
+    .foot a{color:#5140c3;text-decoration:underline;text-underline-offset:2px}
+    .sender-note{max-width:600px;margin:12px auto 0;color:#77738b;font:11px/1.5 Arial,Helvetica,sans-serif}
+    @media only screen and (max-width:480px){body{padding:12px 8px}.email{border-radius:13px}.brand{padding:18px 20px}.body{padding:23px 20px 14px;font-size:15px}.foot{padding:16px 20px 20px}.cta{display:block;text-align:center}.preview,.sender-note{padding:0 5px}}
+  </style>
+</head>
+<body>
+  <div class="preview">Preview note: insert this single block into the CSP’s existing post-registration email. Keep its existing subject, sender, send time, and legal footer.</div>
+  <table class="email" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr><td class="brand"><span>a</span>aspire</td></tr>
+    <tr><td class="body">
+      <p class="eyebrow">A simple next step for your new company</p>
+      <p><strong>Congratulations, {{company_name}}.</strong><br>Your Singapore company was registered on {{incorporation_date}}.</p>
+      <p>Getting your company finances ready? ACRA lists opening a corporate bank account as an immediate next step after Bizfile registration. A separate account can help keep company and personal transactions apart.</p>
+      <p>If you pay suppliers or receive sales across borders, Aspire offers local and international account numbers and supports sending and receiving in 30+ currencies. You can also manage company spending and cards in one place.</p>
+      <p>Aspire says more than 50,000 businesses trust its platform. This figure is not a Singapore-only customer count.</p>
+      <div class="cta-wrap"><a class="cta" href="https://aspireapp.com/en-sg/business-account?utm_source=incorporation_partner&amp;utm_medium=email&amp;utm_campaign=sg_new_company_setup" target="_blank">Explore Aspire business account</a></div>
+      <p>When you start hiring, CPF contributions become a recurring setup task. CPF Board supports Direct Debit and PayNow QR payment options; check its guidance and participating-bank requirements. Aspire account applications are subject to review and verification. Compare providers and choose what works for your business.</p>
+    </td></tr>
+    <tr><td class="foot">An optional account option from your company incorporation service provider. Aspire is not a bank. Product terms, eligibility and application review apply. <a href="https://www.acra.gov.sg/register/business/after-registering/local-company/" target="_blank">ACRA post-registration steps</a> · <a href="https://www.cpf.gov.sg/employer/making-cpf-contributions/submitting-cpf-contributions-via-cpf-ezpay" target="_blank">CPF payment guidance</a></td></tr>
+  </table>
+  <div class="sender-note">Production note: replace {{company_name}} and {{incorporation_date}} with approved ESP merge fields and safe fallbacks. Keep the CSP’s existing unsubscribe, sender-identification and compliance footer outside this module.</div>
+</body>
+</html>
